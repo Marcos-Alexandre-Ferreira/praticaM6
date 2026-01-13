@@ -1,0 +1,28 @@
+/* css reset - boa prática */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+h1 {
+    background-color: rgb(200, 255, 209);
+}
+header {
+    text-align: center;
+    background-color: #fdba91;
+    box-shadow: 3px 3px 5px black;
+}
+form {
+    margin: 0 auto; /* centraliza horizontalmente */
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: solid 1px #000;
+    border-radius: 10px;
+    box-shadow: 6px 5px 5px black;
+    padding: 10px;
+    width: 300px;
+}
