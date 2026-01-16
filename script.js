@@ -18,7 +18,8 @@ function capturarDados() {
     if (palpiteNumero === numeroAdivinhacao) {
         alert("Parabéns! Você adivinhou o número corretamente: " + numeroAdivinhacao);//palpite correto
         numeroTentativas = 0; // Encerra o jogo
-        //refreshPage(); - precisa finalizar ao encotrar o valor correto
+        document.getElementById("numeroTentativas").textContent = "Número de tentativas restantes: " + numeroTentativas;
+        location.reload();// precisa finalizar ao encotrar o valor correto
     } else if (palpiteNumero < numeroAdivinhacao) {
         alert("O número é maior. Tente novamente."); //palpite abaixo do número correto
         numeroTentativas--;
@@ -31,7 +32,8 @@ function capturarDados() {
     
     if (numeroTentativas === 0 && palpiteNumero !== numeroAdivinhacao) {
         alert("Fim do jogo! O número era: " + numeroAdivinhacao);
+        location.reload(); // Reinicia o jogo após o fim
     }
-    
+
     inputPalpite.value = ""; // Limpa o campo de input após cada tentativa
 }
