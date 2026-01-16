@@ -3,9 +3,16 @@
     margin: 0;
     padding: 0;
 }
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
 }
 h1 {
     background-color: rgb(200, 255, 209);
@@ -25,4 +32,26 @@ form {
     box-shadow: 6px 5px 5px black;
     padding: 10px;
     width: 300px;
+}
+.conteudo {
+  flex: 1;
+}
+
+/*footer*/
+footer {
+    color:#0b0715;
+    text-align: center;
+    background-color: #838285;
+}
+
+footer a {
+    text-decoration: none;
+    color: #22053d;
+}
+
+footer a:hover {
+    text-decoration:  underline;
+}
+.footerbaixo {
+    background-color: #838285;
 }
